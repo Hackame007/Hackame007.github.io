@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    gap: 7px;
+    padding: 10px;
+}
+
+.left {
+    width: 22vw;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.right {
+    width: 78vw;
+    border-radius: 7px;
+    position: relative;
+}
+
+.upper {
+    background-color: #1d1d1d;
+    border-radius: 7px;
+    position: relative;
+    max-height: 97vh;
+    overflow-y: auto;
+    height: 84vh;
+}
+
+.menu {
+    padding: 18px;
+    flex-direction: column;
+    gap: 18px;
+    border-radius: 7px;
+    background-color: #121212;
+    color: white;
+    position: relative;
+}
+
+.home {
+    gap: 20px;
+}
+
+.search {
+    gap: 20px;
+    color: #989898;
+}
+
+.section {
+    background-color: #121212;
+    border-radius: 7px;
+    position: relative;
+    min-height: 73vh;
+}
+
+.nav {
+    position: absolute;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-between;
+    background-color: #101010;
+    border-radius: 7px 7px 0px 0px;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    max-height: 49px
+}
+
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.616);
+    border: none;
+    border-radius: 50px;
+    padding: 7px;
+}
+
+.arr_btns {
+    position: relative;
+    gap: 7px;
+    width: 32px;
+    height: 32px;
+    padding-top: 10px;
+}
+
+.log_btns {
+    gap: 30px;
+}
+
+.signup {
+    background-color: transparent;
+    border: none;
+    color: #989898;
+    font-size: 16px;
+    font-weight: 700;
+    transform-origin: center center;
+}
+
+.signup:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.login {
+    border: none;
+    background-color: white;
+    border-radius: 35px;
+    padding: 15px 30px;
+    font-weight: 700;
+}
+
+.login:hover {
+    background-color: rgb(233, 232, 232);
+    transform: scale(1.05);
+}
+
+.library {
+    color: #989898;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.lib_icon {
+    gap: 10px
+}
+
+.footer {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.footer ul a {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+.lib_content {
+    overflow-y: scroll;
+    max-height: 40vh;
+    margin: 10px;
+    background-color: #1f1f1f;
+    border-radius: 7px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.content {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.collection {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card {
+    border-radius: 7px;
+    width: 150px;
+    padding: 12px;
+    margin-top: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.card h2 {
+    font-size: medium;
+}
+
+.card p {
+    font-size: small;
+    color: #989898;
+}
+
+.card_img {
+    height: 150px;
+    width: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.card:hover {
+    background-color: #2c2c2c;
+
+}
+
+.content h1:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.play {
+    position: absolute;
+    top: 115px;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover .play {
+    opacity: 1;
+    top: 105px;
+}
+
+.playbar {
+    margin-top: 10px;
+    background-color: #101010;
+    border-radius: 7px;
+    flex-direction: column;
+    height: 11vh;
+    position: relative;
+}
+
+.play_btns {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.song_dtls {
+    justify-content: space-between;
+    width: 80%;
+    min-height: 70px;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #2c2c2c;
+}
+
+.song_dtls:hover {
+    background-color: #3a3a3a;
+}
+
+.item {
+    gap: 15px
+}
+
+.seekbar {
+    position: absolute;
+    bottom: 5px;
+    width: 75vw;
+    height: 2px;
+    border: 2px solid #474747;
+    border-radius: 10px;
+}
+
+.time {
+    width: 75vw;
+    position: absolute;
+    bottom: 20px;
+    justify-content: space-between;
+}
+
+.circle {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    border: 2px solid rgb(173, 173, 173);
+    bottom: 6px;
+    background-color: rgba(173, 173, 173, 0.5);
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+.info {
+    /* position: absolute;
+    left: 100px;
+    top: 5px; */
+    width: 200px;
+    height: 50px;
+}
+
+#seek {
+     width: 75vw;
+     justify-content: space-around;
+     padding-bottom: 15px;
+}
+
+.volume{
+    position: relative;
+    bottom: 5px;
+}
+
+.vol_range{
+    cursor:pointer;
+}
+
+.ham_bug {
+    display: none;
+}
+
+.cross{
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+}
+
+.volume{
+    gap: 10px;
+}
+@media (max-width:1200px) {
+    .left {
+        position: absolute;
+        left: -100%;
+        transition: all 1s ease;
+        z-index: 10;
+        background-color: black;
+        width: 70vw;
+        height: 100vh;
+    }
+
+    .cross{
+        display: block;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .ham_bug {
+        display: block;
+    }
+
+    .arr_btns {
+        right: 9999px;
+    }
+
+    .song_dtls {
+        font-size: 10px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .info{
+        font-size: 12px;
+    }
+
+    .lib_content{
+        max-height: 60vh;
+    }
+
+    .section{
+        height: 80vh;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+
+    .footer ul{
+        font-size: 7px;
+    }
+
+    .card{
+        width: 45%;
+    }
+
+    .card .play{
+       display: none;
+    }
+
+    .collection{
+        justify-content: center;
+    } 
+
+    .nav{
+        top:-2px
+    }
+}
+
+ @media (max-width:500px) {
+    .card{
+        width: 90%;
+    }
+}

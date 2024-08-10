@@ -1,0 +1,48 @@
+.flex{
+    display: flex;
+}
+
+.justify{
+    justify-content: center;
+}
+
+.align{
+    align-items: center;
+}
+
+.border{
+    border: 2px solid green;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+/* Custom scrollbar for WebKit browsers */
+.upper::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.upper::-webkit-scrollbar-track {
+    border-radius: 7px;
+    background: #1c1c1c; /* Background color of the scrollbar track */
+}
+
+.upper::-webkit-scrollbar-thumb {
+    background: #757575a2; /* Color of the scrollbar thumb */
+    border-radius: 7px; /* Rounded corners for the scrollbar thumb*/
+}
+
+.lib_content::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.lib_content::-webkit-scrollbar-track {
+    border-radius: 7px;
+    background: #1c1c1c; /* Background color of the scrollbar track */
+}
+
+.lib_content::-webkit-scrollbar-thumb {
+    background: #757575a2; /* Color of the scrollbar thumb */
+    border-radius: 7px; /* Rounded corners for the scrollbar thumb */
+}

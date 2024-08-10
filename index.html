@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="assets/icon.png">
+</head>
+
+<body>
+    <div class="main flex">
+        <div class="left flex">
+            <div class="menu flex">
+                <img class="invert" width="88px" height="24px" src="assets/logo.svg" alt="logo">
+                <div class="home flex align">
+                    <img class="invert" src="assets/home.svg" alt="home">
+                    <span>Home</span>
+                </div>
+                <div class="search flex align">
+                    <img src="assets/search.svg" alt="search">
+                    <span>Search</span>
+                </div>
+                <div class="cross">
+                    <img src="assets/cross.svg" alt="X">
+                </div>
+            </div>
+            <div class="section">
+                <div class="library flex">
+                    <div class="lib_icon flex align">
+                        <img src="assets/library.svg" alt="lib">
+                        <span>Your Library</span>
+                    </div>
+                </div>
+                <div class="lib_content flex">
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li><a href="https://www.spotify.com/in-en/legal/">Legal</a></li>
+                        <li><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a>
+                        </li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></li>
+                        <li><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="upper">
+                <div class="nav flex">
+                    <div class="ham_bug">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            color="#ffffff" fill="none">
+                            <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="arr_btns flex">
+                        <button class="left_arr btn">
+                            <img width="16px" height="16px" src="assets/left_arrow.svg" alt="l_arr">
+                        </button>
+                        <button class="right_arr btn">
+                            <img width="16px" height="16px" src="assets/right_arrow.svg" alt="r_arr">
+                        </button>
+                    </div>
+                    <div class="log_btns flex">
+                        <button class="signup">Sign up</button>
+                        <button class="login">Log in</button>
+                    </div>
+                </div>
+                <div class="content">
+                    <h1>Spotify Playlists</h1>
+                    <div class="collection flex">
+                    </div>
+                </div>
+            </div>
+            <div class="playbar flex align justify">
+                <div id="seek" class="flex align">
+                    <div class="info">
+                    </div>
+                    <div class="trio flex align justify ">
+                        <button class="prev play_btns">
+                            <img width="30px" height="30px" src="assets/playbar/previous.svg" alt="prev">
+                        </button>
+                        <button class="ply play_btns">
+                            <img class="play_pause" width="30px" height="30px" src="assets/playbar/play.svg" alt="ply">
+                        </button>
+                        <!-- <button class="pause play_btns" style="display: none;">
+                        <img width="30px" height="30px" class="pse" src="assets/playbar/pause.svg" alt="pause">
+                    </button> -->
+                        <button class="nxt play_btns">
+                            <img width="30px" height="30px" src="assets/playbar/next.svg" alt="nxt">
+                        </button>
+                    </div>
+                    <div class="hidden">
+                        <div class="volume flex align">
+                            <img class="vol_img" src="assets/vol1.svg" alt="vol">
+                            <input class="vol_range" type="range" name="volume">
+                            <!-- <div class="volbar">
+                                <div class="vol_cir"></div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="seek flex justify align">
+                    <div class="time flex">
+                        <div class="curr_time"></div>
+                        <div class="duration"></div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
