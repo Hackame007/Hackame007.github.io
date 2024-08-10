@@ -6,7 +6,7 @@ let curr_time = null
 let curr_folder = "love"
 
 async function getSongs(folder) {
-    let a = await fetch(`/songs/${folder}`)
+    let a = await fetch(`https://github.com/Hackame007/Hackame007.github.io/songs/${folder}`)
     let resp = await a.text();
     let div = document.createElement("div")
     div.innerHTML = resp
@@ -81,7 +81,7 @@ async function nxt() {
 }
 
 async function display_albums() {
-    let a = await fetch(`/songs`)
+    let a = await fetch(`https://github.com/Hackame007/Hackame007.github.io/songs`)
     let resp = await a.text();
     let div = document.createElement("div")
     div.innerHTML = resp
@@ -91,7 +91,7 @@ async function display_albums() {
         const e=arr[index]
         if(e.href.includes("/songs") && !e.href.includes(".htaccess")){
             let folder = e.href.split("/").slice(-2)[0]
-            let a = await fetch(`/songs/${folder}/info.json`)
+            let a = await fetch(`https://github.com/Hackame007/Hackame007.github.io/songs/${folder}/info.json`)
             let resp = await a.json()
             let card_cant = document.querySelector(".collection")
             card_cant.innerHTML+= `<div data-folder= ${folder} class="card">
