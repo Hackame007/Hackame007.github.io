@@ -6,7 +6,7 @@ let curr_time = null
 let curr_folder = "love"
 
 async function getSongs(folder) {
-    let a = await fetch(`http://127.0.0.1:3000/songs/${folder}`)
+    let a = await fetch(`/songs/${folder}`)
     let resp = await a.text();
     let div = document.createElement("div")
     div.innerHTML = resp
@@ -81,7 +81,7 @@ async function nxt() {
 }
 
 async function display_albums() {
-    let a = await fetch(`http://127.0.0.1:3000/songs`)
+    let a = await fetch(`/songs`)
     let resp = await a.text();
     let div = document.createElement("div")
     div.innerHTML = resp
@@ -91,7 +91,7 @@ async function display_albums() {
         const e=arr[index]
         if(e.href.includes("/songs") && !e.href.includes(".htaccess")){
             let folder = e.href.split("/").slice(-2)[0]
-            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`)
+            let a = await fetch(`/songs/${folder}/info.json`)
             let resp = await a.json()
             let card_cant = document.querySelector(".collection")
             card_cant.innerHTML+= `<div data-folder= ${folder} class="card">
